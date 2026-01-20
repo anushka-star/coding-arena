@@ -1,7 +1,18 @@
+"use client";
 import React from "react";
 import Button from "../ui/Button";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 function LandingPage() {
+
+    const router = useRouter();
+
+    const handleGetStarted = () => {
+        // CTA Intent: Direct unauthenticated users to authentication flow
+
+        router.push("/auth/login");
+    };
     return (
         <>
 
@@ -20,9 +31,11 @@ function LandingPage() {
                         and sharpen your skills for the next big challenge.
                     </p>
                     
-                    <Button variant="primary">
+                    
+                    <Button variant="primary" onClick={handleGetStarted}>
                         GET STARTED
                     </Button>
+                    
                 </div>
             </section>
         </>
