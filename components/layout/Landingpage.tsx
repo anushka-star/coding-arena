@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Button from "../ui/Button";
+import Button from "../ui/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -20,7 +20,7 @@ function LandingPage() {
                 
                 {/* Heading */}
                 <h1 className="text-5xl font-bold text-textPrimary">
-                    Practice coding, compete and improve
+                    Practice Coding, Compete and Improve
                 </h1>
 
                 
